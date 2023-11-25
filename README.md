@@ -30,9 +30,9 @@ Comprises Human-Robot Collaboration (3 Humans + 1 Robot) data on a simulated ass
 If you find this dataset useful for your research, please cite this work:
 ```
 @inproceedings{yasar2024PoseTron,
-    title={FurnitureBench: Reproducible Real-World Benchmark for Long-Horizon Complex Manipulation},
+    title={PoseTron: Enabling Close-Proximity Human-Robot Collaboration Through Multi-human Motion Prediction},
     author={Mohammad Samin Yasar and Md. Mofijul Islam and Tariq Iqbal},
-    booktitle={Human Robot Interact},
+    booktitle={Human Robot Interaction},
     year={2024}
 }
 ```
