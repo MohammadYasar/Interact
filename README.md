@@ -1,8 +1,8 @@
 # Interact: A Large-scale multimodal dataset comprising  human-human and human-robot collaboration data 
 
 [**Paper**](paper.pdf)
-| [**Website**](https://clvrai.com/furniture-bench/)
-| [**Documentation**](https://clvrai.github.io/furniture-bench/docs/index.html)
+| [**Website**]()
+| [**Documentation**]()
 
 ![Interact](Interact-banner.png)
 
@@ -20,7 +20,7 @@ It features
 Comprises Human-Human Collaboration (3 Humans) data on a simulated assembly task [link](datasets).
 
 
-## Interact-HHC
+## Interact-HRC
 ![Interact-HRC](Interact-HRC.jpg)
 
 Comprises Human-Robot Collaboration (3 Humans + 1 Robot) data on a simulated assembly task [link](datasets).
