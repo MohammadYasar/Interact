@@ -32,7 +32,7 @@ If you find this dataset useful for your research, please cite this work:
 @inproceedings{yasar2024PoseTron,
     title={PoseTron: Enabling Close-Proximity Human-Robot Collaboration Through Multi-human Motion Prediction},
     author={Mohammad Samin Yasar and Md. Mofijul Islam and Tariq Iqbal},
-    booktitle={Human Robot Interaction},
+    booktitle={ACM/IEEE International Conference on Human-Robot Interaction Proceedings},
     year={2024}
 }
 ```
