@@ -17,13 +17,13 @@ It features
 ## Interact-HHC
 ![Interact-HHC](Interact-HHC.jpg)
 
-Comprises Human-Human Collaboration (3 Humans) data on a simulated assembly task [link](https://drive.google.com/drive/folders/1DxY9bE-kOz3frt4vc5lOGdjvIjm0MHeN?usp=sharing).
+Comprises Human-Human Collaboration (3 Humans) data on a simulated assembly task [link](https://drive.google.com/drive/folders/1r0RX4bHvGpspQf4RSKlcObuNipqp8wKq?usp=drive_link).
 
 
 ## Interact-HRC
 ![Interact-HRC](Interact-HRC.jpg)
 
-Comprises Human-Robot Collaboration (3 Humans + 1 Robot) data on a simulated assembly task [link](https://drive.google.com/drive/folders/1GcPweZ8KSN6Z7qxC6JXmoqXzKc6xA6o3?usp=drive_link).
+Comprises Human-Robot Collaboration (3 Humans + 1 Robot) data on a simulated assembly task [link](https://drive.google.com/drive/folders/1upfF5MGCyu3XdU-5yUxMJ5--GEHu6qvx?usp=sharing).
 
 ## Citation
 
