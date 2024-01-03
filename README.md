@@ -30,9 +30,10 @@ Comprises Human-Robot Collaboration (3 Humans + 1 Robot) data on a simulated ass
 If you find this dataset useful for your research, please cite this work:
 ```
 @inproceedings{yasar2024posetron,
-  author={Mohammad Samin Yasar and Md. Mofijul Islam and Tariq Iqbal},
+  author={Yasar, Mohammad Samin and Islam, Md. Mofijul and Iqbal, Tariq},
   title={PoseTron: Enabling Close-Proximity Human-Robot Collaboration Through Multi-human Motion Prediction},
-  booktitle={Proceedings of the 2023 ACM/IEEE International Conference on Human-Robot Interaction},,
+  booktitle={ACM/IEEE International Conference on Human-Robot Interaction (HRI)},
   year={2024}
+}
 ```
 
