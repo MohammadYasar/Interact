@@ -10,11 +10,22 @@
 
   <style>
     .responsive-image {
+        text-align: center;
         max-width: 50%;
         height: auto;
     }
 </style>
 
+<style>
+    ul {
+        list-style-type: none; /* Remove default bullet points */
+    }
+
+    ul li::before {
+        content: "-"; /* Set '-' as the content before each list item */
+        margin-right: 8px; /* Add some space between '-' and the text */
+    }
+</style>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -180,8 +191,7 @@
         <li>Variations to investigate the impact of obstacles on human motion</li>
         <li>3-D Skeleton data, RGB+D data from two viewpoints, ego-view of two participants</li>
         <li>Large-scale dataset (250+ episodes)</li>
-    </ul>
-    <p></p>
+    </ul>    
     <img src="./static/images/Interact-banner.png" alt="Interact-banner" class="responsive-image">          >          
 
     <div class="columns is-centered">
@@ -220,9 +230,9 @@
           <li>Multimodal Pose Encoder for encoding pose information for multiple agents</li>          
           <li>Multimodal Pose Decoder for auto-regressively predicitng future pose information</li>          
       </ul>
-      <br>
+      
     <img src="./static/images/posetron_architecture.png" alt="PoseTron-banner" class="responsive-image">          
-     
+</section>
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
