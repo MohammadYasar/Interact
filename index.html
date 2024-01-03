@@ -1,52 +1,241 @@
----
-layout: default
-title: Interact Dataset
----
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Dataset and code for PoseTron.">
+  <meta name="keywords" content="HRC, Robots, Motion Prediction">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PoseTron: Enabling Close-Proximity Human-Robot Collaboration Through Multi-human Motion Prediction</title>
 
-<div class="container">
-    <header>
-        <h1>Interact: A Large-scale Multimodal Dataset</h1>
-        <p>
-            <a href="paper.pdf">Paper</a>
-            |            
-            <a href="https://github.com/MohammadYasar/Interact/tree/main">Code</a>
-        </p>
-    </header>
 
-    <img src="Interact-banner.png" alt="Interact">
 
-    <section id="overview">
-        <h2>Overview</h2>
-        <p>Interact is a large-scale multimodal dataset comprising human-human and human-robot collaboration data. It features tasks, variations to investigate obstacles' impact on human motion, 3-D skeleton data, RGB+D data from two viewpoints, and ego-view of two participants. The dataset is large-scale with 252 episodes.</p>
-    </section>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
 
-    <section id="interact-hhc">
-        <h2>Interact-HHC</h2>
-        <img src="Interact-HHC.jpg" alt="Interact-HHC">
-        <p>Comprises Human-Human Collaboration (3 Humans) data on a simulated assembly task. 
-                        <a href="https://drive.google.com/drive/folders/1r0RX4bHvGpspQf4RSKlcObuNipqp8wKq?usp=drive_link">Link</a> </p>
-    </section>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
 
-    <section id="interact-hrc">
-        <h2>Interact-HRC</h2>
-        <img src="Interact-HRC.jpg" alt="Interact-HRC">
-        <p>Comprises Human-Robot Collaboration (3 Humans + 1 Robot) data on a simulated assembly task. 
-                    <a href="https://drive.google.com/drive/folders/1upfF5MGCyu3XdU-5yUxMJ5--GEHu6qvx?usp=sharing">Link</a> </p>
-<!--             [Download](https://drive.google.com/drive/folders/1upfF5MGCyu3XdU-5yUxMJ5--GEHu6qvx?usp=sharing)</p> -->
-    </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
 
-    <section id="citation">
-        <h2>Citation</h2>
-        <p>If you find this dataset useful for your research, please cite this work:</p>
-        <pre>
-        <code>
-@inproceedings{yasar2024PoseTron,
-    title={PoseTron: Enabling Close-Proximity Human-Robot Collaboration Through Multi-human Motion Prediction},
-    author={Mohammad Samin Yasar and Md. Mofijul Islam and Tariq Iqbal},
-    booktitle={ACM/IEEE International Conference on Human-Robot Interaction Proceedings},
-    year={2024}
-}
-        </code>
-    </pre>
-    </section>
-</div>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://samin.netlify.app">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>      
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">PoseTron: Enabling Close-Proximity Human-Robot Collaboration Through Multi-human Motion Prediction</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="www.samin.netlify.app">Mohammad Saamin Yasar</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://mmiakashs.github.io/">Md. Mofijul Islam</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.tiqbal.com/">Tariq Iqbal</a><sup>2</sup>,
+            </span>            
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Washington,</span>
+            <span class="author-block"><sup>2</sup>Google Research</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://github.com/MohammadYasar/Interact/blob/main/paper.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/MohammadYasar/Interact/blob/main/paper.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/MohammadYasar/Interact"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://drive.google.com/drive/u/2/folders/1whfhQ0u_-s2GMUoRx6zL8aMfG0pP0LcC"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            As robots enter human workspaces, there is a crucial need for robots
+            to understand and predict human motion to achieve safe and fluent
+            human-robot collaboration (HRC). However, achieving accurate
+            human motion prediction remains a significant challenge due to the
+            lack of large-scale datasets capturing close-proximity HRC and the
+            lack of efficient, generalizable algorithms that can reliably predict
+            the motion of multiple humans in human-robot teams. 
+          </p>
+          <p>
+            To address these challenges, we introduce INTERACT, a comprehensive multimodal
+            dataset comprising 3-D Skeleton data, RGB+D data from
+            two viewpoints, ego-view, eye-tracking, and gaze data of two participants,
+            and robot joint data, covering both human-human and
+            human-robot collaboration in teams. Next, to address the gap in
+            learning algorithms to predict multi-human motion accurately, we
+            propose PoseTron, a novel transformer-based encoder-decoder architecture
+            that can generalize to multiple agents and utilize various
+            data modalities. 
+          </p>
+          <p>
+            One of PoseTron’s key contributions is the novel
+            conditional attention mechanism in the encoder, enabling efficient
+            extraction and weighing of motion information from all agents to
+            incorporate team dynamics. Additionally, the decoder introduces a
+            novel multimodal attention mechanism, which weights representations
+            from different modalities and the encoder outputs to predict
+            future motion accurately. We extensively evaluated PoseTron by
+            comparing its performance on human-human and human-robot
+            collaboration scenarios from the INTERACT dataset against stateof-
+            the-art multi-agent motion prediction methods. The results suggest
+            that PoseTron outperformed all other methods across all the
+            scenarios and evaluated temporal horizons. Furthermore, we conducted
+            a comprehensive ablation study that underscores the architectural
+            and multimodal design choices. The superior performance
+            of PoseTron provides a promising direction to integrate motion prediction
+            with robot perception and enable safe and effective HRC.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Interact: Human-Human Collaboration</h2>
+          <p>
+            Comprises Human-Human Collaboration (3 Humans) data on a simulated assembly task 
+          </p>
+          <img src="Interact-HHC.jpg" alt="Interact-HHC">          
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      div class="column">
+        <div class="content">
+          <h2 class="title is-3">Interact: Human-Human Collaboration</h2>
+          <p>
+            Comprises Human-Robot Collaboration (3 Humans + 1 Robot) data on a simulated assembly task
+          </p>
+          <img src="Interact-HRC.jpg" alt="Interact-HRC">          
+        </div>
+      </div>
+    </div>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author={Mohammad Samin Yasar and Md. Mofijul Islam and Tariq Iqbal},
+  title={PoseTron: Enabling Close-Proximity Human-Robot Collaboration Through Multi-human Motion Prediction},
+  journal   = {ACM/IEEE International Conference on Human-Robot Interaction Proceedings},
+  year={2024}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">    
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
