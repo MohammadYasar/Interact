@@ -11,17 +11,17 @@ It features
 - Human-Human and Human-Robot Collaboration Tasks
 - Vaariations to investigate the impact of obstacles on human motion
 - 3-D Skeleton data, RGB+D data from two viewpoints, ego-view of two participants
-- Large-scale dataset (252 episodes)
+- Large-scale dataset (250+ episodes)
 
 
 ## Interact-HHC
-![Interact-HHC](Interact-HHC.jpg)
+![Interact-HHC](./static/images/Interact-HHC.jpg)
 
 Comprises Human-Human Collaboration (3 Humans) data on a simulated assembly task [link](https://drive.google.com/drive/folders/1r0RX4bHvGpspQf4RSKlcObuNipqp8wKq?usp=drive_link).
 
 
 ## Interact-HRC
-![Interact-HRC](Interact-HRC.jpg)
+![Interact-HRC](./static/images/Interact-HRC.jpg)
 
 Comprises Human-Robot Collaboration (3 Humans + 1 Robot) data on a simulated assembly task [link](https://drive.google.com/drive/folders/1upfF5MGCyu3XdU-5yUxMJ5--GEHu6qvx?usp=sharing).
 
